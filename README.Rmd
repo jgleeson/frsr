@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# frsr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+An R package to facilitate the importation of Family Resources Survey (EHS) data files that you have already downloaded from the UK Data Service. When pointed to a folder where the FRS files are saved, `frsr` can identify and import the files for a given year or series of years, join them together into a single object, standardise variable names and convert labelled values to factors.
+
+Your use of data downloaded from the UK Data Service must  be consistent with the requirements and conditions of the UKDS that you agreed to when accessing the data.
+
+## Installation
+
+You can install the development version of `frsr` from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("jgleeson/frsr")
+```
+
+## Example
+
+`frsr` currently contains one function, to import just the 'household' FRS dataset for a given list of years. For example, if you have already downloaded the FRS for 2021 and 2022, and have assigned the path where your datasets are saved to the 'folder' object, the function is used as follows.
+
+```{r assign folder, include= FALSE}
+folder <- ("~/Library/CloudStorage/OneDrive-SharedLibraries-GreaterLondonAuthority/HL_HOU_Policy - Documents/Analysis team/Housing Research Notes/Disability & Housing Research Note/Data/FRS/")
+```
+```{r example}
+library(frsr)
+
+d <- import_hh(folder, c(2021:2022))
+```
