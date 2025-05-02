@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-An work-in-progress R package to facilitate the importation of Family
+A work-in-progress R package to facilitate the importation of Family
 Resources Survey (EHS) data files that you have already downloaded from
 the UK Data Service. When pointed to a folder where the FRS files are
 saved, `frsr` can identify and import the files for a given year or
