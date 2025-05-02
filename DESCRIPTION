@@ -25,3 +25,5 @@ Imports:
     magrittr,
     purrr,
     stringr
+URL: https://github.com/jgleeson/frsr
+BugReports: https://github.com/jgleeson/frsr/issues
