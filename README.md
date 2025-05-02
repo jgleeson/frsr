@@ -1,17 +1,17 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# frsr
+# frsr \[under development\]
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-An R package to facilitate the importation of Family Resources Survey
-(EHS) data files that you have already downloaded from the UK Data
-Service. When pointed to a folder where the FRS files are saved, `frsr`
-can identify and import the files for a given year or series of years,
-join them together into a single object, standardise variable names and
-convert labelled values to factors.
+An work-in-progress R package to facilitate the importation of Family
+Resources Survey (EHS) data files that you have already downloaded from
+the UK Data Service. When pointed to a folder where the FRS files are
+saved, `frsr` can identify and import the files for a given year or
+series of years, join them together into a single object, standardise
+variable names and convert labelled values to factors.
 
 Your use of data downloaded from the UK Data Service must be consistent
 with the requirements and conditions of the UKDS that you agreed to when
@@ -25,6 +25,13 @@ You can install the development version of `frsr` from
 ``` r
 # install.packages("pak")
 pak::pak("jgleeson/frsr")
+```
+
+Or
+
+``` r
+# install.packages("devtools")
+devtools::install_github("jgleeson/frsr")
 ```
 
 ## Example
