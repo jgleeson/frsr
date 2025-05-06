@@ -41,7 +41,7 @@ devtools::install_github("jgleeson/frsr")
 
 ## Example
 
-`frsr` currently contains four functions, to import one of the 'household', 'adult', 'child' and 'benefit unit' FRS datasets for a given list of years. For example, if you have already downloaded the FRS for 2021 and 2022, and have assigned the path where your datasets are saved to the 'folder' object, the function to import household data is used as follows.
+`frsr` currently contains four functions, to import one of the 'household', 'adult', 'child' and 'benefit unit' FRS datasets for a given list of years. For example, if you have already downloaded the FRS data for 2021 and 2022, and have assigned the path where your datasets are saved to the 'folder' object, the function to import household data is used as follows.
 
 ```{r assign folder, include= FALSE}
 folder <- ("~/Library/CloudStorage/OneDrive-SharedLibraries-GreaterLondonAuthority/HL_HOU_Policy - Documents/Analysis team/Housing Research Notes/Disability & Housing Research Note/Data/FRS/")

@@ -41,9 +41,9 @@ devtools::install_github("jgleeson/frsr")
 `frsr` currently contains four functions, to import one of the
 ‘household’, ‘adult’, ‘child’ and ‘benefit unit’ FRS datasets for a
 given list of years. For example, if you have already downloaded the FRS
-for 2021 and 2022, and have assigned the path where your datasets are
-saved to the ‘folder’ object, the function to import household data is
-used as follows.
+data for 2021 and 2022, and have assigned the path where your datasets
+are saved to the ‘folder’ object, the function to import household data
+is used as follows.
 
 ``` r
 library(frsr)
