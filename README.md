@@ -7,15 +7,17 @@
 <!-- badges: end -->
 
 A work-in-progress R package to facilitate the importation of Family
-Resources Survey (EHS) data files that you have already downloaded from
-the UK Data Service. When pointed to a folder where the FRS files are
-saved, `frsr` can identify and import the files for a given year or
-series of years, join them together into a single object, standardise
-variable names and convert labelled values to factors.
+Resources Survey (FRS) data files that you have already downloaded from
+the UK Data Service (UKDS). When pointed to a folder where the FRS files
+are saved (with their UKDS serial numbers), `frsr` can identify and
+import the files for a given year or series of years, join them together
+into a single object, standardise variable names and convert labelled
+values to factors.
 
-Your use of data downloaded from the UK Data Service must be consistent
-with the requirements and conditions of the UKDS that you agreed to when
-accessing the data.
+The package does not do anything to help you access the FRS data, which
+must be obtained as a registered user of the UKDS. Your use of the data
+must be in line with the requirements and conditions of the UKDS that
+you agreed to when accessing the data.
 
 ## Installation
 
