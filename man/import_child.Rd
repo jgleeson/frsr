@@ -2,8 +2,8 @@
 % Please edit documentation in R/import.R
 \name{import_child}
 \alias{import_child}
-\title{Import child data, resulting in a dataset with mostly household variables
-but one row for every child Only imports selected variables.}
+\title{Import child data, resulting in a dataset with some household variables
+but one row for every child. Only imports selected variables.}
 \usage{
 import_child(folder, years)
 }
@@ -13,6 +13,6 @@ import_child(folder, years)
 \item{years}{A list of years}
 }
 \description{
-Import child data, resulting in a dataset with mostly household variables
-but one row for every child Only imports selected variables.
+Import child data, resulting in a dataset with some household variables
+but one row for every child. Only imports selected variables.
 }

@@ -133,8 +133,8 @@ import_adult <- function(folder, years){
 
   })}
 
-#' Import child data, resulting in a dataset with mostly household variables
-#' but one row for every child Only imports selected variables.
+#' Import child data, resulting in a dataset with some household variables
+#' but one row for every child. Only imports selected variables.
 #' @param folder A folder containing FRS downloaded from UKDS and unzipped
 #' @param years A list of years
 #' @export
@@ -146,7 +146,8 @@ import_child <- function(folder, years){
 
     message("Importing survey files for ", year, "...")
     hh <- haven::read_spss(paste(folder, stringr::str_subset(stringr::str_subset(files, pattern = key$ukda), pattern = key$household), sep = ""))
-    ch <- haven::read_spss(paste(folder, stringr::str_subset(stringr::str_subset(files, pattern = key$ukda), pattern = key$child), sep = ""))
+    ch <- haven::read_spss(paste(folder, stringr::str_subset(stringr::str_subset(files, pattern = key$ukda), pattern = key$child), sep = "") %>%
+                             str_subset("extchild.sav", negate = TRUE))  # This extra line is needed to ensure we don't pick up the 'extchild.sav' dataset
 
     hh <- hh %>% labelled::to_factor(strict = TRUE) %>% rename_with(tolower)
     ch <- ch %>% labelled::to_factor(strict = TRUE) %>% rename_with(tolower)
